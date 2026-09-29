@@ -1,0 +1,800 @@
+/* ========================================
+   RESET
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+#head {
+    width: 100%;
+    min-height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 20px;
+
+    background-color: white;
+}
+
+
+/* ---------- Logo ---------- */
+
+.brand {
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+    color: black;
+}
+
+.brand-mark {
+    background: black;
+    color: white;
+
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 3px;
+
+    padding: 8px 10px 8px 13px;
+}
+
+.brand-name {
+    margin-left: 12px;
+
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+
+/* ---------- Nav ---------- */
+
+#head ul {
+    display: flex;
+    align-items: center;
+
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+#head li {
+    margin: 0 0 0 28px;
+    list-style: none;
+}
+
+
+#head a {
+    text-decoration: none;
+    color: black;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+
+#head a:hover {
+    color: #FFC107;
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+#container {
+    width: 100%;
+    height: 600px;
+
+    background-image: url(images/architect.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* ========================================
+   PROJECT HEADING
+======================================== */
+
+.project {
+    width: 100%;
+    height: 60px;
+
+    padding: 20px;
+
+    font-size: 25px;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* ========================================
+   ABOUT HEADING
+======================================== */
+
+.abouts {
+    width: 100%;
+    height: 60px;
+
+    padding: 20px;
+
+    font-size: 25px;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* ========================================
+   PROJECT PHOTOS - DESKTOP
+======================================== */
+
+.house,
+.house2 {
+
+    width: 97%;
+
+    margin: 20px auto;
+
+    display: grid;
+
+    /* 4 columns */
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+/* ========================================
+   PROJECT PHOTO BOXES
+======================================== */
+
+.f1,
+.f2,
+.f3,
+.f4,
+.ff1,
+.ff2,
+.ff3,
+.ff4 {
+
+    width: 100%;
+    height: 190px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* ========================================
+   PROJECT IMAGES
+======================================== */
+
+.f1 {
+    background-image: url(images/f1.jpg);
+}
+
+.f2 {
+    background-image: url(images/f2.jpg);
+}
+
+.f3 {
+    background-image: url(images/f3.jpg);
+}
+
+.f4 {
+    background-image: url(images/f4.jpg);
+}
+
+
+.ff1 {
+    background-image: url(images/f2.jpg);
+}
+
+.ff2 {
+    background-image: url(images/f1.jpg);
+}
+
+.ff3 {
+    background-image: url(images/f4.jpg);
+}
+
+.ff4 {
+    background-image: url(images/f3.jpg);
+}
+
+
+/* ========================================
+   PARAGRAPH
+======================================== */
+
+p {
+    margin: 20px;
+    line-height: 28px;
+}
+
+
+/* ========================================
+   TEAM CARDS - DESKTOP GRID
+======================================== */
+
+#container3 {
+
+    width: 100%;
+
+    display: grid;
+
+    /* 4 cards in one row */
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+    padding: 20px;
+}
+
+
+/* ========================================
+   CARDS
+======================================== */
+
+.card1,
+.card2,
+.card3,
+.card4 {
+
+    width: 100%;
+}
+
+
+/* ========================================
+   CARD IMAGES
+======================================== */
+
+.child1,
+.child2,
+.child3,
+.child4 {
+
+    width: 100%;
+    height: 250px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.child1 {
+    background-image: url(images/card1.jpg);
+}
+
+.child2 {
+    background-image: url(images/child2.jpg);
+}
+
+.child3 {
+    background-image: url(images/child3.jpg);
+}
+
+.child4 {
+    background-image: url(images/child4.jpg);
+}
+
+
+/* ========================================
+   CARD CONTENT
+======================================== */
+
+.card1_content,
+.card2_content,
+.card3_content,
+.card4_content {
+
+    padding: 15px;
+}
+
+
+.card1_content h1,
+.card2_content h1,
+.card3_content h1,
+.card4_content h1 {
+
+    font-size: 28px;
+
+    margin-bottom: 10px;
+}
+
+
+.card1_content h2,
+.card2_content h2,
+.card3_content h2,
+.card4_content h2 {
+
+    color: gray;
+
+    margin-bottom: 15px;
+
+    font-size: 20px;
+}
+
+
+.card1_content p,
+.card2_content p,
+.card3_content p,
+.card4_content p {
+
+    margin: 10px 0;
+
+    line-height: 24px;
+}
+
+
+/* ========================================
+   CARD BUTTON
+======================================== */
+
+.btn {
+
+    width: 100%;
+    height: 40px;
+
+    border: none;
+
+    background: #e5e5e5;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.btn:hover {
+    background: #bdbdbd;
+}
+
+
+/* ========================================
+   CONTACT HEADING
+======================================== */
+
+.h2-contact {
+
+    padding: 20px;
+
+    font-size: 25px;
+}
+
+
+/* ========================================
+   INPUTS
+======================================== */
+
+input {
+
+    width: 95%;
+    height: 40px;
+
+    margin-left: 25px;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    padding: 10px;
+
+    border: 1px solid #ccc;
+}
+
+
+/* ========================================
+   SEND BUTTON
+======================================== */
+
+.btn2 {
+
+    background-color: black;
+
+    color: white;
+
+    width: 150px;
+    height: 60px;
+
+    margin-top: 25px;
+    margin-left: 25px;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+
+/* ========================================
+   LOCATION IMAGE
+======================================== */
+
+#location_pic {
+
+    width: 100%;
+    height: 600px;
+
+    margin-top: 50px;
+
+    background-image: url(images/last.jpg);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.final {
+
+    width: 100%;
+    height: 70px;
+
+    background: black;
+
+    color: white;
+}
+
+
+.footer-heading {
+
+    text-align: center;
+
+    line-height: 70px;
+
+    margin: 0;
+}
+
+
+/* ========================================
+   TABLET SCREEN
+   601px - 1024px : 2 columns
+======================================== */
+
+@media (min-width: 601px) and (max-width: 1024px) {
+
+    /* ---------- Header ---------- */
+
+    #head {
+        padding: 10px 16px;
+    }
+
+    #head li {
+        margin: 0 0 0 18px;
+    }
+
+    /* ---------- Hero ---------- */
+
+    #container {
+        height: 420px;
+    }
+
+    /* ---------- Projects : 2 per row ---------- */
+
+    .house,
+    .house2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* ---------- Team : 2 per row ---------- */
+
+    #container3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* ---------- Location ---------- */
+
+    #location_pic {
+        height: 400px;
+    }
+}
+
+
+/* ========================================
+   MOBILE SCREEN
+   MAX WIDTH 600px
+======================================== */
+
+@media (max-width: 600px) {
+
+
+    /* -------------------------
+       HEADER - stacked, stays visible
+    ------------------------- */
+
+    #head {
+        flex-direction: column;
+        align-items: flex-start;
+
+        padding: 12px 16px;
+    }
+
+    .brand-name {
+        font-size: 18px;
+    }
+
+    #head ul {
+        margin: 10px 0 0 0;
+        padding: 0;
+
+        flex-wrap: wrap;
+    }
+
+    #head li {
+        margin: 8px 20px 8px 0;
+    }
+
+    #head a {
+        font-size: 15px;
+    }
+
+
+    /* -------------------------
+       HERO
+    ------------------------- */
+
+    #container {
+
+        width: 100%;
+        height: 300px;
+
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    /* -------------------------
+       PROJECT HEADING
+    ------------------------- */
+
+    .project {
+
+        width: 100%;
+        height: auto;
+
+        padding: 20px;
+
+        font-size: 22px;
+    }
+
+
+    /* -------------------------
+       ABOUT HEADING
+    ------------------------- */
+
+    .abouts {
+
+        width: 100%;
+        height: auto;
+
+        padding: 20px;
+
+        font-size: 20px;
+    }
+
+
+    /* ====================================
+       PROJECT PHOTOS MOBILE GRID
+    ==================================== */
+
+    .house,
+    .house2 {
+
+        width: 90%;
+
+        height: auto;
+
+        margin: 20px auto;
+
+        display: grid;
+
+        /* ONE COLUMN */
+        grid-template-columns: 1fr;
+
+        /* space between photos */
+        gap: 20px;
+    }
+
+
+    /* -------------------------
+       MOBILE PHOTO
+    ------------------------- */
+
+    .f1,
+    .f2,
+    .f3,
+    .f4,
+    .ff1,
+    .ff2,
+    .ff3,
+    .ff4 {
+
+        width: 100%;
+
+        height: 190px;
+
+        margin: 0;
+    }
+
+
+    /* ====================================
+       MOBILE TEAM CARDS GRID
+    ==================================== */
+
+    #container3 {
+
+        width: 100%;
+
+        display: grid;
+
+        /* ONE CARD PER ROW */
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+        padding: 20px;
+    }
+
+
+    /* -------------------------
+       MOBILE CARD
+    ------------------------- */
+
+    .card1,
+    .card2,
+    .card3,
+    .card4 {
+
+        width: 100%;
+
+        height: auto;
+    }
+
+
+    /* -------------------------
+       CARD IMAGE
+    ------------------------- */
+
+    .child1,
+    .child2,
+    .child3,
+    .child4 {
+
+        width: 100%;
+
+        height: 250px;
+    }
+
+
+    /* -------------------------
+       CARD HEADING
+    ------------------------- */
+
+    .card1_content h1,
+    .card2_content h1,
+    .card3_content h1,
+    .card4_content h1 {
+
+        font-size: 25px;
+    }
+
+
+    .card1_content h2,
+    .card2_content h2,
+    .card3_content h2,
+    .card4_content h2 {
+
+        font-size: 18px;
+    }
+
+
+    /* ====================================
+       MOBILE CONTACT
+    ==================================== */
+
+    .h2-contact {
+
+        padding: 20px;
+
+        font-size: 22px;
+    }
+
+
+    input {
+
+        width: 90%;
+
+        height: 40px;
+
+        margin-left: 5%;
+
+        margin-top: 10px;
+
+        margin-bottom: 10px;
+    }
+
+
+    .btn2 {
+
+        width: 150px;
+
+        height: 50px;
+
+        margin-left: 5%;
+
+        margin-top: 15px;
+    }
+
+
+    /* ====================================
+       MOBILE LOCATION
+    ==================================== */
+
+    #location_pic {
+
+        width: 100%;
+
+        height: 300px;
+
+        margin-top: 30px;
+    }
+
+
+    /* ====================================
+       MOBILE FOOTER
+    ==================================== */
+
+    .final {
+
+        width: 100%;
+
+        height: 60px;
+    }
+
+
+    .footer-heading {
+
+        line-height: 60px;
+
+        font-size: 14px;
+    }
+
+
+    /* ====================================
+       MOBILE PARAGRAPH
+    ==================================== */
+
+    p {
+
+        margin: 15px;
+
+        line-height: 25px;
+    }
+
+}

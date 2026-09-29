@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BR Architects - Blogs</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
+
+    body{
+        font-family: Verdana, Geneva, sans-serif;
+    }
+
+    /* ---------- Header ---------- */
+    #head{
+        width: 100%;
+        min-height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        background-color: white;
+    }
+
+    /* ---------- Logo ---------- */
+    .brand{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+    }
+    .brand-mark{
+        background: black;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        letter-spacing: 3px;
+        padding: 8px 10px 8px 13px;
+    }
+    .brand-name{
+        margin-left: 12px;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    /* ---------- Nav ---------- */
+    #head ul{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    #head li{
+        margin: 0 0 0 28px;
+        list-style: none;
+    }
+    #head a{
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+        transition: 0.3s;
+    }
+    #head a:hover{
+        color: #FFC107;
+    }
+
+    #container1 {
+        width: 100%;
+        padding: 45px 20px;
+        border-top: 2px solid rgba(9, 78, 121, 0.968);
+    }
+
+    .HeadB {
+        width: 23%;
+        min-height: 500px;
+        border: 1px solid black;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 60px;
+        margin-right: 60px;
+        background-image: url(images/card1.jpg);
+        background-size: 100% 250px;
+        background-repeat: no-repeat;
+    }
+
+    .DetailB {
+        width: 23%;
+        min-height: 500px;
+        border: 1px solid black;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 60px;
+        margin-right: 60px;
+        background-image: url(images/child2.jpg);
+        background-size: 100% 250px;
+        background-repeat: no-repeat;
+    }
+
+    .EndB {
+        width: 23%;
+        min-height: 500px;
+        border: 1px solid black;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 50px;
+        margin-right: 60px;
+        background-image: url(images/child3.jpg);
+        background-size: 100% 250px;
+        background-repeat: no-repeat;
+    }
+
+    .btn1{
+        width: 130px;
+        height: 40px;
+        margin-left: 70px;
+        margin-right: 80px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .btn2{
+        width: 130px;
+        height: 40px;
+        margin-left: 70px;
+        margin-right: 80px;
+        text-align: center;
+    }
+    .btn3{
+        width: 130px;
+        height: 40px;
+        margin-left: 70px;
+        margin-right: 80px;
+        margin-top: 35px;
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+        margin-left: 20px;
+    }
+    .para1{
+        text-align: center;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .para3{
+        text-align: center;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .para2{
+        text-align: center;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .card1content {
+        height: 250px;
+        width: 100%;
+    }
+
+    /* ---------- Tablet : cards wrap ---------- */
+    @media (min-width: 601px) and (max-width: 1024px){
+        #head{ padding: 10px 16px; }
+        #head li{ margin: 0 0 0 18px; }
+
+        .HeadB,.DetailB,.EndB{
+            width: 42%;
+            margin: 20px;
+        }
+    }
+
+    /* ---------- Mobile : one card per row ---------- */
+    @media (max-width: 600px){
+        #head{
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 12px 16px;
+        }
+        .brand-name{ font-size: 18px; }
+        #head ul{
+            margin: 10px 0 0 0;
+            padding: 0;
+            flex-wrap: wrap;
+        }
+        #head li{ margin: 8px 20px 8px 0; }
+        #head a{ font-size: 15px; }
+
+        #container1{
+            padding: 30px 20px;
+        }
+
+        .HeadB,.DetailB,.EndB{
+            display: block;
+            width: 100%;
+            margin: 0 0 25px 0;
+            min-height: 0;
+            padding-bottom: 30px;
+        }
+
+        .btn1,.btn2,.btn3{
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+    }
+</style>
+
+<body>
+    <header id="head">
+        <a href="index.html" class="brand">
+            <span class="brand-mark">BR</span><span class="brand-name">Architects</span>
+        </a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <div id="container1">
+        <div class="HeadB">
+            <div class="card1content"></div>
+
+            <h1>Modern Web Design</h1>
+
+            <p class="para1">I create clean, modern, and visually appealing website designs that provide an excellent user
+                experience across all devices</p>
+            <button class="btn1">Contact</button>
+        </div>
+        <div class="DetailB">
+            <div class="card1content"></div>
+
+            <h1>Responsive Development</h1>
+
+            <p class="para2">Every website I build is fully responsive, ensuring it works perfectly on desktops, tablets, and
+                mobile phones.</p>
+            <button class="btn2">Contact</button>
+        </div>
+        <div class="EndB">
+            <div class="card1content"></div>
+
+            <h1>Fast Performance</h1>
+
+            <p class="para3">I focus on creating lightweight and optimized websites that load quickly and provide a smooth
+                browsing experience.</p>
+            <button class="btn3">Contact</button>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

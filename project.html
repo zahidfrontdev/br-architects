@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BR Architects - Projects</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: Verdana, Geneva, sans-serif;
+        }
+
+        /* ---------- Header ---------- */
+        #head{
+            width: 100%;
+            min-height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: white;
+        }
+
+        /* ---------- Logo ---------- */
+        .brand{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+        }
+        .brand-mark{
+            background: black;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            letter-spacing: 3px;
+            padding: 8px 10px 8px 13px;
+        }
+        .brand-name{
+            margin-left: 12px;
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+
+        /* ---------- Nav ---------- */
+        #head ul{
+            display: flex;
+            align-items: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        #head li{
+            margin: 0 0 0 28px;
+            list-style: none;
+        }
+        #head a{
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        #head a:hover{
+            color: #FFC107;
+        }
+
+        .project{
+            width:100%;
+            height:60px;
+            padding:20px;
+            font-size:25px;
+            display:flex;
+            align-items:center;
+        }
+
+        .house{
+            width:97%;
+            margin:20px auto;
+            display:grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap:20px;
+        }
+        .house2{
+            width:97%;
+            margin:20px auto;
+            display:grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap:20px;
+        }
+
+        .f1,.f2,.f3,.f4,.ff1,.ff2,.ff3,.ff4{
+            width:100%;
+            height:190px;
+            background-size:cover;
+            background-position:center;
+            background-repeat:no-repeat;
+        }
+
+        .f1{ background-image:url(images/f1.jpg); }
+        .f2{ background-image:url(images/f2.jpg); }
+        .f3{ background-image:url(images/f3.jpg); }
+        .f4{ background-image:url(images/f4.jpg); }
+        .ff1{ background-image:url(images/f2.jpg); }
+        .ff2{ background-image:url(images/f1.jpg); }
+        .ff3{ background-image:url(images/f4.jpg); }
+        .ff4{ background-image:url(images/f3.jpg); }
+
+        /* ---------- Tablet : 2 columns ---------- */
+        @media (min-width: 601px) and (max-width: 1024px){
+            #head{ padding: 10px 16px; }
+            #head li{ margin: 0 0 0 18px; }
+            .house,.house2{ grid-template-columns: repeat(2, 1fr); }
+        }
+
+        /* ---------- Mobile : 1 column ---------- */
+        @media (max-width: 600px){
+            #head{
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 12px 16px;
+            }
+            .brand-name{ font-size: 18px; }
+            #head ul{
+                margin: 10px 0 0 0;
+                padding: 0;
+                flex-wrap: wrap;
+            }
+            #head li{ margin: 8px 20px 8px 0; }
+            #head a{ font-size: 15px; }
+
+            .project{ height:auto; font-size:22px; }
+            .house,.house2{
+                width:90%;
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="head">
+        <a href="index.html" class="brand">
+            <span class="brand-mark">BR</span><span class="brand-name">Architects</span>
+        </a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <div class="project">
+        <h2>Projects</h2>
+    </div>
+
+    <hr>
+
+    <div class="house">
+        <div class="f1"></div>
+        <div class="f2"></div>
+        <div class="f3"></div>
+        <div class="f4"></div>
+    </div>
+
+    <div class="house2">
+        <div class="ff1"></div>
+        <div class="ff2"></div>
+        <div class="ff3"></div>
+        <div class="ff4"></div>
+    </div>
+
+</body>
+</html>
