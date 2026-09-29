@@ -3,197 +3,348 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BR Architects - About</title>
+    <title>Document</title>
     <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-        }
-
-        body{
-            font-family: Verdana, Geneva, sans-serif;
-        }
-
-        /* ---------- Header ---------- */
-        #head{
+       *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+ #head{
             width: 100%;
-            min-height: 70px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 10px 20px;
+            height: 70px;
+            
+        
+            
+            
+            
+        
             background-color: white;
+        
         }
+        li{
+            display: inline-block;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin: 20px;
+            
+            
+        
 
-        /* ---------- Logo ---------- */
-        .brand{
-            display: flex;
-            align-items: center;
+    
+        }
+        .first-heading{
+            width:50%;
+            height: 70px;
+            
+        
+        }
+        ul{
+            
+            margin-left: 900px;
+        }
+        a{
+        
             text-decoration: none;
             color: black;
         }
-        .brand-mark{
-            background: black;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            letter-spacing: 3px;
-            padding: 8px 10px 8px 13px;
-        }
-        .brand-name{
-            margin-left: 12px;
-            font-size: 20px;
-            letter-spacing: 1px;
-        }
-
-        /* ---------- Nav ---------- */
-        #head ul{
-            display: flex;
-            align-items: center;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-        #head li{
-            margin: 0 0 0 28px;
-            list-style: none;
-        }
-        #head a{
-            text-decoration: none;
-            color: black;
-            font-size: 16px;
-            transition: 0.3s;
-        }
-        #head a:hover{
+        a:hover{
             color: #FFC107;
+         transition-duration:1s ;
+    
+
+        }
+     p{
+    margin:20px;
+    line-height:28px;
+}
+
+
+
+#container3{
+    width:100%;
+    height:600px;
+    margin-top:30px;
+}
+
+.card1{
+     width:23%;
+    height:500px;
+    border:1px solid #ccc;
+    display:inline-block;
+    vertical-align:top;
+    margin-left:15px;
+}
+
+.card2{
+     width:23%;
+    height:500px;
+    border:1px solid #ccc;
+    display:inline-block;
+    vertical-align:top;
+    margin-left:15px;
+}
+
+.card3{
+     width:23%;
+    height:500px;
+    border:1px solid #ccc;
+    display:inline-block;
+    vertical-align:top;
+    margin-left:15px;
+}
+
+.card4{
+    width:23%;
+    height:500px;
+    border:1px solid #ccc;
+    display:inline-block;
+    vertical-align:top;
+    margin-left:15px;
+}
+
+
+
+.child1{
+     width:100%;
+    height:250px;
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+}
+.child2{
+     width:100%;
+    height:250px;
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+}
+.child3{
+     width:100%;
+    height:250px;
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+}
+.child4{
+    width:100%;
+    height:250px;
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+}
+
+.child1{
+    background-image:url(images/card1.jpg);
+}
+
+.child2{
+    background-image:url(images/child2.jpg);
+}
+
+.child3{
+    background-image:url(images/child3.jpg);
+}
+
+.child4{
+    background-image:url(images/child4.jpg);
+}
+
+
+
+.card1_content{
+     padding:15px;
+}
+.card2_content{
+     padding:15px;
+}
+.card3_content{
+     padding:15px;
+}
+.card4_content{
+    padding:15px;
+}
+
+.card1_content h1{
+    font-size:28px;
+    margin-bottom:10px;
+}
+.card2_content h1{
+    font-size:28px;
+    margin-bottom:10px;
+}
+.card3_content h1{
+    font-size:28px;
+    margin-bottom:10px;
+}
+.card4_content h1{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.card1_content h2{
+     color:gray;
+    margin-bottom:15px;
+    font-size:20px;
+}
+.card2_content h2{
+     color:gray;
+    margin-bottom:15px;
+    font-size:20px;
+}
+.card3_content h2{
+     color:gray;
+    margin-bottom:15px;
+    font-size:20px;
+}
+.card4_content h2{
+    color:gray;
+    margin-bottom:15px;
+    font-size:20px;
+}
+
+.card1_content p{
+     margin:10px 0;
+    line-height:24px;
+}
+.card2_content p{
+     margin:10px 0;
+    line-height:24px;
+}
+.card3_content p{
+     margin:10px 0;
+    line-height:24px;
+}
+.card4_content p{
+    margin:10px 0;
+    line-height:24px;
+}
+
+
+
+.btn{
+    width:100%;
+    height:40px;
+    border:none;
+    background:#e5e5e5;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#bdbdbd;
+}
+
+
+
+#location_pic{
+    width:100%;
+    height:600px;
+    margin-top:50px;
+    background-image:url(images/last.jpg);
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+}
+
+
+
+.final{
+    width:100%;
+    height:70px;
+    background:black;
+    color:white;
+}
+
+.footer-heading{
+    text-align:center;
+    line-height:70px;
+    margin:0;
+}
+
+
+/* ========================================
+   LOGO
+======================================== */
+
+.logo {
+    margin-left: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+
+.logo-br {
+    background: black;
+    color: white;
+    padding: 5px 12px;
+    margin-right: 10px;
+}
+
+
+/* header ko logo ke liye flex diya (homepage wala tareeqa) */
+#head {
+    display: flex;
+    align-items: center;
+}
+
+
+ul {
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+
+        @media (max-width: 600px) {
+        #head {
+            height: auto;
+            flex-wrap: wrap;
+            padding: 10px 0;
         }
 
-        .abouts{
-            width:100%;
-            height:60px;
-            padding:20px;
-            font-size:25px;
-            display:flex;
-            align-items:center;
+
+        .logo {
+            margin-left: 15px;
+            font-size: 20px;
         }
 
-        p{
-            margin:20px;
-            line-height:28px;
+
+        ul {
+            margin: 5px 0 5px 10px;
+            flex-wrap: wrap;
         }
 
-        #container3{
-            width:100%;
-            margin-top:30px;
-            padding: 0 10px;
+
+        li {
+            margin: 8px;
         }
 
-        .card1,.card2,.card3,.card4{
-            width:23%;
-            border:1px solid #ccc;
-            display:inline-block;
-            vertical-align:top;
-            margin-left:15px;
-            margin-bottom:20px;
-        }
 
-        .child1,.child2,.child3,.child4{
-            width:100%;
-            height:250px;
-            background-size:cover;
-            background-position:center;
-            background-repeat:no-repeat;
-        }
-
-        .child1{ background-image:url(images/card1.jpg); }
-        .child2{ background-image:url(images/child2.jpg); }
-        .child3{ background-image:url(images/child3.jpg); }
-        .child4{ background-image:url(images/child4.jpg); }
-
-        .card1_content,.card2_content,.card3_content,.card4_content{
-            padding:15px;
-        }
-
-        .card1_content h1,.card2_content h1,.card3_content h1,.card4_content h1{
-            font-size:28px;
-            margin-bottom:10px;
-        }
-
-        .card1_content h2,.card2_content h2,.card3_content h2,.card4_content h2{
-            color:gray;
-            margin-bottom:15px;
-            font-size:20px;
-        }
-
-        .card1_content p,.card2_content p,.card3_content p,.card4_content p{
-            margin:10px 0;
-            line-height:24px;
-        }
-
-        .btn{
-            width:100%;
-            height:40px;
-            border:none;
-            background:#e5e5e5;
-            font-size:16px;
-            cursor:pointer;
-            transition:0.3s;
-        }
-        .btn:hover{
-            background:#bdbdbd;
-        }
-
-        /* ---------- Tablet : 2 cards per row ---------- */
-        @media (min-width: 601px) and (max-width: 1024px){
-            #head{ padding: 10px 16px; }
-            #head li{ margin: 0 0 0 18px; }
-            .card1,.card2,.card3,.card4{
-                width:46%;
+            .card1, .card2, .card3, .card4 {
+                width: 94%;
+                display: block;
+                margin: 20px auto;
+                height: auto;
+            }
+            #container3 {
+                height: auto;
             }
         }
-
-        /* ---------- Mobile : 1 card per row ---------- */
-        @media (max-width: 600px){
-            #head{
-                flex-direction: column;
-                align-items: flex-start;
-                padding: 12px 16px;
-            }
-            .brand-name{ font-size: 18px; }
-            #head ul{
-                margin: 10px 0 0 0;
-                padding: 0;
-                flex-wrap: wrap;
-            }
-            #head li{ margin: 8px 20px 8px 0; }
-            #head a{ font-size: 15px; }
-
-            .abouts{ height:auto; font-size:22px; }
-            p{ margin:15px; line-height:25px; }
-
-            #container3{ padding: 0 20px; }
-            .card1,.card2,.card3,.card4{
-                width:100%;
-                margin-left:0;
+        @media (min-width: 601px) and (max-width: 1024px) {
+            .card1, .card2, .card3, .card4 {
+                width: 46%;
+                margin: 15px 1.5%;
             }
         }
     </style>
 </head>
 <body>
-    <header id="head">
-        <a href="index.html" class="brand">
-            <span class="brand-mark">BR</span><span class="brand-name">Architects</span>
-        </a>
+     <header id="head">
+     <div class="logo"><span class="logo-br">BR</span> Architects</div>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="project.html">Projects</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="blogs.html">Blogs</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+       <li><a href="project.html">Project</a></li>
+       <li><a href="about.html">About</a></li>
+       <li><a href="">Blogs</a></li>
+       <li><a href="contact.html">Contact us</a></li>
+       </ul>
     </header>
-
     <div class="abouts">
         <h2>About</h2>
     </div>
@@ -214,7 +365,7 @@
 
     <div id="container3">
 
-
+    
         <div class="card1">
 
             <div class="child1"></div>
@@ -236,7 +387,7 @@
 
         </div>
 
-
+    
         <div class="card2">
 
             <div class="child2"></div>
@@ -258,7 +409,7 @@
 
         </div>
 
-
+    
         <div class="card3">
 
             <div class="child3"></div>
@@ -280,7 +431,7 @@
 
         </div>
 
-
+    
         <div class="card4">
 
             <div class="child4"></div>
@@ -301,8 +452,3 @@
             </div>
 
         </div>
-
-    </div>
-
-</body>
-</html>
